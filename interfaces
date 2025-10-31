@@ -1,0 +1,12 @@
+#Este archivo sirve para configurar las interfaces de red del equipo.
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface (interfaz que se usa para loopback)
+auto lo
+iface lo inet loopback
+
+# The primary network interface (interfaz de red primaria o principal)
+
+auto enp0s3
+iface enp0s3 inet dhcp
