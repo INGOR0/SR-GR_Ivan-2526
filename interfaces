@@ -1,0 +1,26 @@
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+#Interfaz red 1 NO HAY GATEWAY PORQUE ESTE ES EL ROUTER
+auto enp0s3
+iface enp0s3 inet static
+    address 172.17.4.10
+    netmask 255.255.255.0
+    up iptables -t nat -A POSTROUTING -o enp0s9 -s 172.17.4.0/24 -j MASQUERADE
+    down iptables -t nat -D POSTROUTING -o enp0s9 -s 172.17.4.0/24 -j MASQUERADE
+
+#Interfaz red 2 NO GATEWAY PORQUE ES EL ROUTER
+auto enp0s8
+iface enp0s8 inet static
+    address 172.17.5.10
+    netmask 255.255.255.0
+    up iptables -t nat -A POSTROUTING -o enp0s9 -s 172.17.5.0/24 -j MASQUERADE
+    down iptables -t nat -D POSTROUTING -o enp0s9 -s 172.17.5.0/24 -j MASQUERADE
+
+#Interfaz red 3 NAT 
+auto enp0s9
+iface enp0s9 inet dhcp
