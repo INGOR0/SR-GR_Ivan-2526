@@ -7,6 +7,7 @@ auto lo
 iface lo inet loopback
 
 # The primary network interface (interfaz de red primaria o principal)
+# Doing exercise 9
 
 auto enp0s3
 iface enp0s3 inet dhcp
