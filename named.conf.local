@@ -6,3 +6,8 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
+zone "ejemplo.com"
+{
+    type master;
+    file "/var/lib/bind/db.ejemplo.com";
+};
