@@ -29,5 +29,5 @@ pc12		IN A 172.17.5.12
 servidorimpresion IN A 172.17.5.13
 
 ; Web + FTP server and mail server
-PC14 IN A 172.17.4.14
-PC15 IN A 172.17.4.15
+pc14 IN A 172.17.4.14
+pc15 IN A 172.17.4.15

@@ -1,0 +1,15 @@
+$TTL 604800
+@	IN	SOA	pc11	admin (
+				2	; serial
+			   604800	; refresh
+			    86400	; retry
+			  2419200	; expire
+			   604800 )	; negative cache TTL
+
+; name servers
+@	IN	NS	pc11.ejemplo.com.
+	IN	NS	pc12.ejemplo.com.
+
+; servers + router
+14	IN	PTR	pc14.ejemplo.com.
+15	IN	PTR	pc15.ejemplo.com.
