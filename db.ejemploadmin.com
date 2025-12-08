@@ -1,4 +1,4 @@
-$ORIGIN admin.ejemplo.com.
+$ORIGIN recepcion.ejemplo.com.
 
 pc3             IN A 172.17.5.103
 pc4             IN A 172.17.5.104

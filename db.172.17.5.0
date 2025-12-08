@@ -11,5 +11,16 @@ $TTL 604800
 	IN	NS	pc12.ejemplo.com.
 
 ; servers + router
-14	IN	PTR	pc14.ejemplo.com.
-15	IN	PTR	pc15.ejemplo.com.
+101	IN	PTR	pc1.rrhh.ejemplo.com.
+102	IN	PTR	pc2.rrhh.ejemplo.com.
+103	IN	PTR	pc3.recepcion.ejemplo.com.
+104	IN	PTR	pc4.recepcion.ejemplo.com.
+105	IN	PTR	pc5.recepcion.ejemplo.com.
+106	IN	PTR	pc6.recepcion.ejemplo.com.
+107	IN	PTR	pc7.recepcion.ejemplo.com.
+108	IN	PTR	pc8.recepcion.ejemplo.com.
+109	IN	PTR	pc9.recepcion.ejemplo.com.
+10	IN	PTR	pc10.ejemplo.com.
+11	IN	PTR	pc11.ejemplo.com.
+12	IN	PTR	pc12.ejemplo.com.
+13	IN	PTR	pc13.ejemplo.com.
