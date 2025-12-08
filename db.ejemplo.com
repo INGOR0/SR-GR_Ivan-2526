@@ -11,6 +11,10 @@ ejemplo.com.  IN   SOA  pc11 admin(
 @       IN     NS   pc11.ejemplo.com.
         IN     NS   pc12.ejemplo.com.
 
+; Mail servers
+	IN	MX	10	smtp.ejemplo.com.
+	IN	MX	20	smtp2.ejemplo.com.
+
 ; ## A records ##
 
 ; PC1 (cliente1) - PC9 (workstations)
@@ -37,6 +41,10 @@ servidorimpresion IN CNAME pc13
 ; Web + FTP server and mail server
 pc14		IN A 172.17.4.14
 www		IN CNAME pc14
+ftp		IN CNAME pc14
 
 pc15		IN A 172.17.4.15
-ftp		IN CNAME pc15
+smtp		IN CNAME pc15
+
+pc16		IN A 172.17.4.16
+smtp2		IN CNAME pc16
