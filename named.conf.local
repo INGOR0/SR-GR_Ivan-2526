@@ -13,6 +13,7 @@ zone "ejemplo.com"
 	type slave;
 	file "/var/lib/bind/dbesclavo.ejemplo.com";
 	masters {172.17.5.11;};
+	allow-notify {172.17.5.11;};
 };
 
 
@@ -24,6 +25,7 @@ zone "4.17.172.in-addr.arpa"
 	type slave;
 	file "/var/lib/bind/dbesclavo.172.17.4.0";
 	masters {172.17.5.11;};
+	allow-notify {172.17.5.11;};
 };
 
 // network 2: 172.17.5.0/24
@@ -32,4 +34,5 @@ zone "5.17.172.in-addr.arpa"
 	type slave;
 	file "/var/lib/bind/dbesclavo.172.17.5.0";
 	masters {172.17.5.11;};
+	allow-notify {172.17.5.11;};
 };
