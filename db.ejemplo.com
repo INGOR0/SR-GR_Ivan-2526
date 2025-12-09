@@ -1,7 +1,7 @@
 $TTL  604800
 $ORIGIN ejemplo.com.
 ejemplo.com.  IN   SOA  pc11 admin(
-                2    ;Second version
+                4    ;Second version
            604800    ;Refresh
             86400    ;Retry
           2419200    ;Expire
@@ -48,3 +48,6 @@ smtp		IN CNAME pc15
 
 pc16		IN A 172.17.4.16
 smtp2		IN CNAME pc16
+
+; transfer test
+switch	IN A 172.17.5.250
