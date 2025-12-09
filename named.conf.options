@@ -10,7 +10,11 @@ options {
 	// Uncomment the following block, and insert the addresses replacing 
 	// the all-0's placeholder.
 
-	forwarders { 8.8.8.8; };
+	forwarders { 172.17.5.10; };
+	forward only;
+	allow-recursion {127.0.0.1; 172.17.4.0/24; 172.17.5.0/24; };
+	allow-query {127.0.0.1; 172.17.4.0/24; 172.17.5.0/24; };
+	allow-transfer {172.17.5.12;};
 
 	//========================================================================
 	// If BIND logs error messages about the root key being expired,
@@ -19,7 +23,4 @@ options {
 	//dnssec-validation auto;
 
 	//listen-on-v6 { any; };
-
-	allow-query { 127.0.0.1; 172.17.5.0/24; 172.17.4.0/24; };
-	allow-recursion { 127.0.0.1; 172.17.5.0/24; 172.17.4.0/24; };
 };
