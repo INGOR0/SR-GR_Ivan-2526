@@ -8,12 +8,10 @@
 
 // DIRECT ZONE
 
-zone "ejemplo.com"
+zone "admin.dployerz.com"
 {
-	type slave;
-	file "/var/lib/bind/dbesclavo.ejemplo.com";
-	masters {172.17.5.11;};
-	allow-notify {172.17.5.11;};
+	type master;
+	file "/var/lib/bind/db.admin.dployerz.com";
 };
 
 
