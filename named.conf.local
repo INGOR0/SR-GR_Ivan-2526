@@ -15,22 +15,33 @@ zone "admin.dployerz.com"
 };
 
 
+zone "dployerz.com"
+{
+	type slave;
+	file "/var/lib/bind/slave.db.dployerz.com";
+	masters { 172.17.5.11; };
+};
+
+zone "workstation.dployerz.com"
+{
+	type slave;
+	file "/var/lib/bind/slave.db.workstation.dployerz.com";
+	masters { 172.17.5.11; };
+};
+
 // Reverse zones
 
 // network 1: 172.17.4.0/24
 zone "4.17.172.in-addr.arpa"
 {
 	type slave;
-	file "/var/lib/bind/dbesclavo.172.17.4.0";
+	file "/var/lib/bind/slave.db.172.17.4.0";
 	masters {172.17.5.11;};
-	allow-notify {172.17.5.11;};
 };
 
 // network 2: 172.17.5.0/24
 zone "5.17.172.in-addr.arpa"
 {
-	type slave;
-	file "/var/lib/bind/dbesclavo.172.17.5.0";
-	masters {172.17.5.11;};
-	allow-notify {172.17.5.11;};
+	type master;
+	file "/var/lib/bind/db.172.17.5.0";
 };
