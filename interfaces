@@ -23,4 +23,7 @@ iface enp0s8 inet static
 
 #Interfaz red 3 NAT 
 auto enp0s9
-iface enp0s9 inet dhcp
+iface enp0s9 inet static
+    address 10.0.4.15
+    netmask 255.255.255.0
+    gateway 10.0.4.2
