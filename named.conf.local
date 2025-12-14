@@ -21,6 +21,13 @@ zone "workstation.dployerz.com"
     file "/var/lib/bind/db.workstation.dployerz.com";	
 };
 
+zone "admin.dployerz.com"
+{
+	type slave;
+	file "/var/lib/bind/slave.db.admin.dployerz.com";
+	masters { 172.17.5.12; };
+};
+
 // Reverse zones
 
 // Network 1: 172.17.4.0/24
@@ -33,7 +40,9 @@ zone "4.17.172.in-addr.arpa"
 // Network 2: 172.17.5.0/24
 zone "5.17.172.in-addr.arpa"
 {
-	type master;
-	file "/var/lib/bind/db.172.17.5.0";
+	type slave;
+	file "/var/lib/bind/slave.db.172.17.5.0";
+	masters { 172.17.5.12; };
 };
+
 
