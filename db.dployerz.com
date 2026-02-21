@@ -1,6 +1,6 @@
 $TTL  604800
 dployerz.com.  IN   SOA  pc11 admin.dployerz.com. (
-                5    ; version of the file
+                6    ; version of the file
             86400    ; Refresh time
             86400    ; Retry time
           2419200    ; Expire time
@@ -40,4 +40,4 @@ servidorftp	IN CNAME pc14
 pc15		IN A 172.17.5.15
 servidorsftp	IN CNAME pc15
 
-servidorimagenes IN A 172.17.5.13
+servidorimagenes IN A 172.17.5.222
