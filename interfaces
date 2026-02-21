@@ -8,8 +8,8 @@ auto lo
 iface lo inet loopback
 
 # The primary network interface
-auto enp0s3
-iface enp0s3 inet static
+auto enp1s0
+iface enp1s0 inet static
         address 172.17.5.12
         netmask 255.255.255.0
         gateway 172.17.5.10

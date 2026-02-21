@@ -1,0 +1,30 @@
+$TTL 604800
+@	IN	SOA	pc11	admin.dployerz.com (
+				3	; serial
+			    86400	; refresh
+			    86400	; retry
+			  2419200	; expire
+			   604800 )	; negative cache TTL
+
+; name servers
+@	IN	NS	pc11.dployerz.com.
+	IN	NS	pc12.dployerz.com.
+
+; PTR RECORDS
+101	IN	PTR	pc1.workstation.dployerz.com.
+102	IN	PTR	pc2.workstation.dployerz.com.
+103	IN	PTR	pc3.workstation.dployerz.com.
+104	IN	PTR	pc4.workstation.dployerz.com.
+105	IN	PTR	pc5.workstation.dployerz.com.
+106	IN	PTR	pc6.workstation.dployerz.com.
+107	IN	PTR	pc7.workstation.dployerz.com.
+108	IN	PTR	pc8.workstation.dployerz.com.
+109	IN	PTR	pc9.workstation.dployerz.com.
+10	IN	PTR	pc10.dployerz.com.
+11	IN	PTR	pc11.dployerz.com.
+12	IN	PTR	pc12.dployerz.com.
+13	IN	PTR	pc13.dployerz.com.
+15	IN	PTR	pc15.dployerz.com.
+222	IN	PTR	servidorimagenes.dployerz.com.
+253	IN	PTR	pc0.admin.dployerz.com.
+254	IN	PTR	pc100.admin.dployerz.com
